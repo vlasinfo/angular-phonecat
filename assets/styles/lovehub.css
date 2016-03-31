@@ -539,12 +539,19 @@ a:hover .fa-circle {
 
 #project {
     color: #111;
-    padding: 100px 0 50px;
+    padding: 20px 0 50px;
 }
-
+.project {
+    background: #f3f3f3;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
 .project-item .project-link {
     display: block;
     position: relative;
+}
+.project-item img {
+    padding: 10px;
 }
 .project-item .project-link .caption {
     position: absolute;
