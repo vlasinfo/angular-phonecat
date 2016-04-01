@@ -300,29 +300,58 @@ a:hover .fa-circle {
 .navbar-custom .nav li a.red-light:hover {
     color: #FF9966;
 }
+#documents h3 {
+    padding: 20px 0 0;
+}
 
 /* Intro */
+::-webkit-input-placeholder {color:#f5f5f5;}
+::-moz-placeholder          {color:#f5f5f5;}
+:-moz-placeholder           {color:#f5f5f5;}
+:-ms-input-placeholder      {color:#f5f5f5;}
+
+
 .contact-form {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
 }
+.contact-form h1 {
+    font-weight: bold;
+}
 .contact-form h1,
 .contact-form h5 {
     text-align: center;
 }
-.contact-form button {
+.contact-form input[type="submit"] {
     background: transparent;
     border: 1px solid #d9d9d9;
     float: right;
     margin: 20px 0 0 0;
     padding: 10px;
 }
-.contact-form button:hover {
+.contact-form input[type="submit"]:focus,
+.contact-form input[type="submit"]:hover {
     color: #d9d9d9;
 }
+.contact-form input[type="submit"]:disabled {
+    background: #999;
+}
+.contact-form textarea {
+    padding-bottom: 0;
+    max-height: 130px;
+    position: relative;
+}
+.contact-form textarea:after {
+    content: "red";
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
 .contact-form textarea,
-.contact-form input {
+.contact-form input[type="text"] {
     font-size: 16px;
     line-height: 22px;
     padding: 10px 0;
@@ -336,6 +365,9 @@ a:hover .fa-circle {
 .contact-form textarea:focus,
 .contact-form input:focus {
     border-color: #00a8ff;
+}
+input[type='text'].invalid, input[type='password'].invalid, input[type='number'].invalid, input[type='email'].invalid, input[type='url'].invalid, textarea.invalid, select.invalid {
+    border-color: red;
 }
 .contact-form textarea {
     resize: none;
@@ -469,7 +501,7 @@ a:hover .fa-circle {
 }
 #about {
     width: 100%;
-    background: url(../images/2.jpg)  no-repeat center center scroll;
+    background: url(../images/whowe.jpg)  no-repeat top center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

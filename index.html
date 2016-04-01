@@ -15,7 +15,7 @@
     <link href="assets/styles/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="assets/styles/lovehub.css" rel="stylesheet">
+    <link href="assets/styles/main.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="assets/styles/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -75,11 +75,11 @@
                 <div class="contact-form center-block">
                     <h1>Запитання геодезисту</h1>
                     <h5>Тел: +3 (8067) 528 44 36</h5>
-                     <form>
-                        <textarea placeholder="Запитання"></textarea>
-                        <input placeholder="Номер телефону">
-                        <input placeholder="Iм'я">
-                        <button type="submit" class="btn">Надiслати</button>
+                     <form id="contact-form" name="contact-form">
+                        <textarea class="required" placeholder="Запитання"></textarea>
+                         <input type="text" placeholder="Номер телефону" class="number" value="" size="14" class="invalid">
+                        <input type="text" placeholder="Iм'я">
+                        <input type="submit" class="btn pull-right" value="Надiслати">
                     </form>
                 </div>
 
@@ -102,6 +102,7 @@
 </header>
 <div id="documents" class="project wow fadeIn">
     <div class="container-fluid text-center">
+        <h3>Квалiфiкацiйнi документи</h3>
         <div class="row">
             <div class="col-sm-4 project-item no-pad">
                 <a data-target="#projectModal1" class="project-link" data-toggle="modal">
@@ -266,7 +267,18 @@
     <div class="row">
         <div class="col-sm-6 split-padding3">
             <h2 class="headerline">Хто ми</h2>
-            <p>Текст</p>
+            <p>Компанія «Геоземексперт» при проведенні робіт використовує нове геодезичне обладнання іноземного виробництва.
+                <ul>
+                    <li>GPS-приймачі марки Spectra Precision.</li>
+                    <li>Польові Станції американського виробника Trimble.</li>
+                    <li>Електронні рівні японської корпорації Sokkia.</li>
+                </ul>
+            </p>
+                <p><em>Складання виконавчої документації для кожного етапу виконання геодезичних робіт є обов'язковим аспектом для нас.</em></p>
+
+                <p>Використовуючи сучасне обладнання, програмне забезпечення та технології виробництва, ми зменшуємо терміни виконання робіт на 15-20% при дотриманні всіх норм і правил безпеки і цим підтримуємо стабільно високу якість.</p>
+
+                <p><strong>Наша точність є основою для успіху наших клієнтів!</strong></p>
         </div>
     </div>
 </section>
@@ -381,17 +393,18 @@
 
 <!-- Plugin JavaScript -->
 <script src="assets/scripts/jquery.easing.min.js"></script>
-<script src="assets/scripts/jquery.countdown.min.js"></script>
 <script src="assets/scripts/smoothscroll.js"></script>
-<script src="assets/scripts/form.js"></script>
-<script src="assets/scripts/jquery.placeholder.min.js"></script>
+<script src="assets/scripts/jquery.valid.min.js"></script>
+<script src="assets/scripts/autosize.min.js"></script>
 
 <!-- Plugins for video background -->
 <script src="assets/scripts/device.min.js"></script>
 <script src="assets/scripts/jquery.mb.YTPlayer.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="assets/scripts/lovehub.js"></script>
-
+<script src="assets/scripts/custom.js"></script>
+<script>
+    autosize(document.querySelectorAll('textarea'));
+</script>
 </body>
 </html>
