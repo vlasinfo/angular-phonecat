@@ -395,22 +395,13 @@ input[type='text'].invalid, input[type='password'].invalid, input[type='number']
     -moz-background-size: cover;
     background-size: cover;
 }
-.intro2 {
-    background: #000 url(../images/6.jpg)  no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-}
-.intro2 #clock {
-    padding:0 0 60px;
-}
 .intro2 #clock span {
     border-bottom: 1px solid #fff!important;
 }
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     padding: 100px 0;
     width: 100%;
     height: 100%;
@@ -737,15 +728,6 @@ a.project-link:hover {
 }
 
 /* Mission */
-
-#mission {
-    width: 100%;
-    color: #fff;
-    background: #111 url(../images/7.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-}
 
 #mission .fa {
     display: block;

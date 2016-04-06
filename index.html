@@ -74,15 +74,21 @@
                         <div class="">
                             <form role="form" id="contactForm" data-toggle="validator" class="shake">
                                 <div class="form-group">
-                                    <textarea id="message" class="form-control" rows="5" placeholder="Запитання" required data-error=" "></textarea>
+                                    <textarea id="message" class="form-control" rows="5" placeholder="Запитання" required data-error="Задайте запитання*"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Iм'я" required data-error=" ">
+                                <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <input type="text" class="form-control" id="phone" placeholder="Телефон" required  data-error="Введiть свiй телефон">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                    <div class="col-sm-6 form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Пошта" data-error=" ">
                                         <div class="help-block with-errors"></div>
                                     </div>
+                                </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Пошта" required  data-error=" ">
+                                        <input type="text" class="form-control" id="name" placeholder="Iм'я" data-error=" ">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 <button type="submit" id="form-submit" class="btn btn-success pull-right ">Надiслати</button>
