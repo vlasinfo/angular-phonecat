@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="assets/styles/main.css" rel="stylesheet">
+    <link href="assets/styles/animate.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="assets/styles/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -75,12 +76,27 @@
                 <div class="contact-form center-block">
                     <h1>Запитання геодезисту</h1>
                     <h5>Тел: +3 (8067) 528 44 36</h5>
-                     <form id="contact-form" name="contact-form">
-                        <textarea class="required" placeholder="Запитання"></textarea>
-                         <input type="text" placeholder="Номер телефону" class="number" value="" size="14" class="invalid">
-                        <input type="text" placeholder="Iм'я">
-                        <input type="submit" class="btn pull-right" value="Надiслати">
-                    </form>
+                    <div class="row">
+                        <div class="">
+                            <form role="form" id="contactForm" data-toggle="validator" class="shake">
+                                <div class="form-group">
+                                    <textarea id="message" class="form-control" rows="5" placeholder="Запитання" required data-error=" "></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Iм'я" required data-error=" ">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Пошта" required  data-error=" ">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                <button type="submit" id="form-submit" class="btn btn-success pull-right ">Надiслати</button>
+                                <div id="msgSubmit" class="h3 text-center hidden">asd</div>
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -394,17 +410,14 @@
 <!-- Plugin JavaScript -->
 <script src="assets/scripts/jquery.easing.min.js"></script>
 <script src="assets/scripts/smoothscroll.js"></script>
-<script src="assets/scripts/jquery.valid.min.js"></script>
-<script src="assets/scripts/autosize.min.js"></script>
+<script src="assets/scripts/validator.min.js"></script>
 
 <!-- Plugins for video background -->
 <script src="assets/scripts/device.min.js"></script>
 <script src="assets/scripts/jquery.mb.YTPlayer.js"></script>
 
 <!-- Custom Theme JavaScript -->
+<script src="assets/scripts/form-scripts.js"></script>
 <script src="assets/scripts/custom.js"></script>
-<script>
-    autosize(document.querySelectorAll('textarea'));
-</script>
 </body>
 </html>

@@ -316,6 +316,12 @@ a:hover .fa-circle {
     max-width: 500px;
     margin: 0 auto;
 }
+.contact-form .form-control {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
 .contact-form h1 {
     font-weight: bold;
 }
@@ -323,18 +329,18 @@ a:hover .fa-circle {
 .contact-form h5 {
     text-align: center;
 }
-.contact-form input[type="submit"] {
+.contact-form button.btn {
     background: transparent;
     border: 1px solid #d9d9d9;
     float: right;
     margin: 20px 0 0 0;
     padding: 10px;
 }
-.contact-form input[type="submit"]:focus,
-.contact-form input[type="submit"]:hover {
+.contact-form button.btn:focus,
+.contact-form button.btn:hover {
     color: #d9d9d9;
 }
-.contact-form input[type="submit"]:disabled {
+.contact-form button:disabled {
     background: #999;
 }
 .contact-form textarea {
@@ -351,7 +357,8 @@ a:hover .fa-circle {
     z-index: 99;
 }
 .contact-form textarea,
-.contact-form input[type="text"] {
+.contact-form input {
+    color: #ffffff;
     font-size: 16px;
     line-height: 22px;
     padding: 10px 0;
@@ -359,7 +366,7 @@ a:hover .fa-circle {
     width: 100%;
     background: transparent;
     border: 0;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 2px solid #d9d9d9;
     outline: none;
 }
 .contact-form textarea:focus,

@@ -29,18 +29,3 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-$( "#contact-form" ).validVal();
-$( "#contact-form button:submit" ).click(function( event ) {
-    event.preventDefault();
-});
-
-$(function()
-{
-    $('#contact-form').submit(function(){
-        $("input[type='submit']", this)
-            .val("Зачекайте...")
-            .attr('disabled', 'disabled');
-        return true;
-    });
-});
-
