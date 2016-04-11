@@ -341,6 +341,7 @@ a:hover .fa-circle {
 .contact-form button.btn:focus,
 .contact-form button.btn:hover {
     color: #333333;
+    background: #cccccc;
 }
 .contact-form button:disabled {
     background: #999;
@@ -371,9 +372,15 @@ a:hover .fa-circle {
     border-bottom: 1px solid #d9d9d9;
     outline: none;
 }
+.contact-form textarea:valid,
+.contact-form input:valid,
 .contact-form textarea:focus,
 .contact-form input:focus {
     border-color: #00a8ff;
+}
+.contact-form textarea:valid,
+.contact-form input:valid {
+    border-width: 2px;
 }
 body .contact-form textarea.form-control {
     position: relative;
@@ -407,7 +414,8 @@ body .contact-form .text-danger {
     border-bottom:1px solid #757575;
 }
 .contact-form textarea {
-    padding:10px 10px 10px 5px;
+    padding:0 10px 0 5px;
+    height: 42px;
 }
 .contact-form input {
     padding:15px 10px 15px 5px;
