@@ -310,7 +310,9 @@ a:hover .fa-circle {
 :-moz-placeholder           {color:#f5f5f5;}
 :-ms-input-placeholder      {color:#f5f5f5;}
 
-
+.form-holder {
+    position: relative;
+}
 .contact-form {
     width: 100%;
     max-width: 500px;
@@ -338,7 +340,7 @@ a:hover .fa-circle {
 }
 .contact-form button.btn:focus,
 .contact-form button.btn:hover {
-    color: #d9d9d9;
+    color: #333333;
 }
 .contact-form button:disabled {
     background: #999;
@@ -366,15 +368,26 @@ a:hover .fa-circle {
     width: 100%;
     background: transparent;
     border: 0;
-    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
     outline: none;
 }
 .contact-form textarea:focus,
 .contact-form input:focus {
     border-color: #00a8ff;
 }
-input[type='text'].invalid, input[type='password'].invalid, input[type='number'].invalid, input[type='email'].invalid, input[type='url'].invalid, textarea.invalid, select.invalid {
-    border-color: red;
+body .contact-form textarea.form-control {
+    position: relative;
+    overflow-y: auto;
+}
+body .contact-form .has-error .form-control {
+    border-color: #FF6666;
+}
+body .contact-form .has-error label {
+    color: #FF6666;
+}
+body .contact-form .text-danger {
+    color: #FF6666;
+    padding: 17px 0 0 0;
 }
 .contact-form textarea {
     resize: none;
@@ -383,6 +396,98 @@ input[type='text'].invalid, input[type='password'].invalid, input[type='number']
 .contact-form input {
     margin: 20px 0 0;
 }
+.contact-form .form-group {
+    position:relative;
+}
+.contact-form textarea,
+.contact-form input {
+    font-size:18px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+.contact-form textarea {
+    padding:10px 10px 10px 5px;
+}
+.contact-form input {
+    padding:15px 10px 15px 5px;
+}
+.contact-form textarea:focus,
+.contact-form input:focus {
+    outline:none;
+}
+.contact-form label {
+    color:#999;
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:2px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+.contact-form textarea:focus ~ label,
+.contact-form textarea:valid ~ label,
+.contact-form input:focus ~ label,
+.contact-form input:valid ~ label {
+    top:-20px;
+    font-size:16px;
+    color:#00a8ff;
+}
+.contact-form .bar {
+    position:relative;
+    display:block;
+    top: 1px;
+    z-index: 9;
+}
+.contact-form .bar:before,
+.contact-form .bar:after     {
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#00a8ff;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+.contact-form .bar:before {
+    left:50%;
+}
+.contact-form .bar:after {
+    right:50%;
+}
+
+.contact-form input:focus ~ .bar:before,
+.contact-form input:focus ~ .bar:after {
+    width:50%;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: red !important;
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to    { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to    { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to    { width:0; background:transparent; }
+}
+
+
 
 .intro {
     display: table;

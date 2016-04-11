@@ -69,37 +69,61 @@
             <div class="col-md-12">
                 <div class="contact-form center-block">
                     <h1>Запитання геодезисту</h1>
-                    <h5>Тел: +3 (8067) 528 44 36</h5>
+                    <h5>Тел: +3 8(067) 528 44 36</h5>
                     <div class="row">
-                        <div class="">
-                            <form role="form" id="contactForm" data-toggle="validator" class="shake">
+                        <div class="form-holder">
+                            <form id="contactForm"   role="form" data-toggle="validator" class="shake">
                                 <div class="form-group">
-                                    <textarea id="message" class="form-control" rows="5" placeholder="Запитання" required data-error="Задайте запитання*"></textarea>
-                                    <div class="help-block with-errors"></div>
+                                    <span class="bar"></span>
+                                    <textarea id="message" onkeyup="textAreaAdjust(this)" class="form-control" rows="1" required></textarea>
+                                    <span class="bar"></span>
+                                    <label>Запитання</label>
                                 </div>
                                 <div class="row">
-                                <div class="col-sm-6 form-group">
-                                    <input type="text" class="form-control" id="phone" placeholder="Телефон" required  data-error="Введiть свiй телефон">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                    <div class="col-sm-6 form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Пошта" data-error=" ">
-                                        <div class="help-block with-errors"></div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="phone" required>
+                                        <span class="bar"></span>
+                                        <label>Телефон</label>
                                     </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input id="email" type="text" class="form-control" required>
+                                        <span class="bar"></span>
+                                        <label>Пошта</label>
+                                    </div>
+                                </div>
                                 </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Iм'я" data-error=" ">
-                                        <div class="help-block with-errors"></div>
+                                        <input id="name" type="text" class="form-control" required>
+                                        <span class="bar"></span>
+                                        <label>Iм'я</label>
                                     </div>
-                                <button type="submit" id="form-submit" class="btn btn-success pull-right ">Надiслати</button>
-                                <div id="msgSubmit" class="h3 text-center hidden">asd</div>
+                                <button type="submit" id="form-submit" class="btn btn-default btn-lg pull-right ">Надiслати</button>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </form>
                         </div>
                     </div>
+
                 </div>
 
-
+<script>
+    function textAreaAdjust(o) {
+        o.style.height = "1px";
+        o.style.height = (25+o.scrollHeight)+"px";
+    }
+    function loadPage()
+    {
+        if (document.login)//if the form login exists, focus:
+        {
+            document.login.name.focus();//the username input
+            document.login.pass.focus();//the password input
+            document.login.login.focus();//the login button (submitbutton)
+        }
+    }
+</script>
 
             </div>
                 <ul class="list-inline lead">
