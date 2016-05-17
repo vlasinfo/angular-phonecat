@@ -33,7 +33,7 @@ p {
 
 @media(min-width:768px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 20px;
         font-size: 16px;
         line-height: 1.6;
     }
@@ -292,6 +292,11 @@ a:hover .fa-circle {
     bottom: 0;
     left:50%;
     transform: translate(-50%, 0);
+}
+
+.page {
+    padding-top: 100px;
+    background: #000;
 }
 
 .navbar-custom a.red-light {
@@ -870,11 +875,15 @@ a.project-link:hover {
 #contact2 {
     width: 100%;
     color: #fff;
-    background: url(../images/3.jpg) no-repeat center center scroll;
+    background: url(../images/3.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    height: 120px;
+}
 
+.valign-text {
+padding-top: 50px;
 }
 
 #map {
@@ -882,4 +891,8 @@ a.project-link:hover {
     height: 300px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+}
+
+.footer .list-inline.lead a i {
+    font-size: 20px;
 }

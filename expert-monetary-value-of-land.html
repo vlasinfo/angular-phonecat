@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Геоземексперт</title>
+    <title>Геоземексперт | Експертна оцiнка земельних дiлянок</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/styles/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +50,7 @@
                 <li>
                     <a class="page-scroll" href="geodesy.html">Геодезiя</a>
                 </li>
-                <li>
+                <li class="active">
                     <a class="red-light" href="expert-monetary-value-of-land.html">Експертна оцiнка земельних дiлянок</a>
                 </li>
             </ul>
@@ -59,124 +59,82 @@
 </nav>
 
 <!-- Intro Header -->
-<header class="intro">
+<header class="page">
 
-    <!-- Video from YouTube. https://youtu.be/1kCBPTTrJYU https://youtu.be/MH6UJz0du2M -->
-    <a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/MH6UJz0du2M', containment:'.intro', autoPlay:true, loop:true, mute:true, startAt:0, stopAt: 28, quality:'auto', opacity:1, showControls: false, showYTLogo:false, vol:25}"></a>
-
-    <div class="intro-body">
-        <div class="container">
-            <div class="col-md-12">
-                <div class="contact-form center-block">
-                    <h1>Запитання геодезисту</h1>
-                    <h5>Тел: +3 8(067) 528 44 36</h5>
-                    <div class="row">
-                        <div class="form-holder">
-                            <form id="contactForm"   role="form" data-toggle="validator" class="shake">
-                                <div class="form-group">
-                                    <span class="bar"></span>
-                                    <textarea id="message" onkeyup="textAreaAdjust(this)" class="form-control" rows="1" required></textarea>
-                                    <span class="bar"></span>
-                                    <label>Запитання</label>
-                                </div>
-                                <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="phone" required>
-                                        <span class="bar"></span>
-                                        <label>Телефон</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input id="email" type="text" class="form-control" required>
-                                        <span class="bar"></span>
-                                        <label>Пошта</label>
-                                    </div>
-                                </div>
-                                </div>
-                                    <div class="form-group">
-                                        <input id="name" type="text" class="form-control" required>
-                                        <span class="bar"></span>
-                                        <label>Iм'я</label>
-                                    </div>
-                                <button type="submit" id="form-submit" class="btn btn-default btn-lg pull-right ">Надiслати</button>
-                                <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                <div class="clearfix"></div>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-
-<script>
-    function textAreaAdjust(o) {
-        o.style.height = "1px";
-        o.style.height = (25+o.scrollHeight)+"px";
-    }
-    function loadPage()
-    {
-        if (document.login)//if the form login exists, focus:
-        {
-            document.login.name.focus();//the username input
-            document.login.pass.focus();//the password input
-            document.login.login.focus();//the login button (submitbutton)
-        }
-    }
-</script>
-
-            </div>
-                <ul class="list-inline lead">
-                    <li>
-                        <a href="#documents" class="btn btn-primary btn-lg page-scroll"><i class="fa fa-chevron-down"></i> Більше інформації</a>
-                    </li>
-                </ul>
-
-            <div class="video-controls">
-                <a id="video-volume" class="fa fa-volume-off fa-lg" href="#"></a>
-                <a id="video-play" class="fa fa-pause fa-lg" href="#"></a>
-            </div>
-
-        </div>
-    </div>
 </header>
-<div id="documents" class="project wow fadeIn">
-    <div class="container-fluid text-center">
-        <h3>Квалiфiкацiйнi документи</h3>
+
+<!-- Project Section -->
+<section id="project" class="head">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-4 project-item no-pad">
-                <a data-target="#projectModal1" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Детальнiше
-                        </div>
-                    </div>
-                    <img src="assets/documents/1.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 project-item no-pad">
-                <a data-target="#projectModal2" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Детальнiше
-                        </div>
-                    </div>
-                    <img src="assets/documents/2.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 project-item no-pad">
-                <a data-target="#projectModal3" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Детальнiше
-                        </div>
-                    </div>
-                    <img src="assets/documents/3.jpg" class="img-responsive center-block" alt="">
-                </a>
+            <div class="col-xs-12">
+                <h3 class="headerline">ЕКСПЕРТНА ОЦІНКА ЗЕМЕЛЬНИХ ДІЛЯНОК</h3>
+                <div class="row">
+                    <div class="col-md-12 wow fadeInLeft animated">
+                        <p>
+                            Експертна грошова оцінка земельних ділянок та прав на них проводиться з метою визначення вартості об’єкта оцінки.
+                        </p>
+
+                        <h4 class="section-title">
+                            <strong>Експертна оцінка земельної ділянки</strong> проводиться спеціалістами на підставі наявності наступних документів:
+                        </h4>
+
+                        <ul>
+                            <li>копії документів, що встановлюють особу замовника/власника (паспорт, ідентифікаційний
+                                код або свідоцтво про реєстрацію юридичної особи);</li>
+                            <li>документи, що підтверджують права власності на землю (державний акт на землею,
+                                свідоцтва на право власності, договір оренди, або купівлі);</li>
+                            <li>витяг з Державного земельного кадастру;</li>
+                            <li>інформація, про існування обмежень використання ділянки;</li>
+                            <li>інформація про наявність інженерних мереж та комунікацій;</li>
+                            <li>інформація про споруди, що знаходяться на ділянці.</li>
+                        </ul>
+
+                        <h4 class="section-title">
+                            <strong>Оцінка землі</strong> зокрема проводиться у наступних випадках:
+                        </h4>
+
+                        <ul>
+                            <li>проведення операцій купівлі-продажу земельних ділянок (нотаріальна контора);</li>
+                            <li>необхідність пред’явлення висновків про вартість у суді;</li>
+                            <li>оформлення (або продовження) договору застави (банк, нотаріальна контора);</li>
+                            <li>внесення земельної ділянки у статутний капітал підприємства (бухгалтерія) тощо.</li>
+                        </ul>
+
+                        <p>
+                            <strong>Експертна оцінка землі</strong> проводиться спеціалістами на основі аналізу пропозицій щодо продажу
+                            схожих за цільовим призначенням, місцем розташування та іншими параметрами земельних
+                            ділянок, із обов’язковим врахуванням коефіцієнту торгу, наявності комунікацій, тощо.
+                        </p>
+
+                        <p>
+                            Окремим видом робіт є оцінка земельних ділянок, право власності на які підтверджує державний
+                            акт старого зразка, якщо така ділянка має декілька цільових призначень (наприклад, частина
+                            ділянки землі під будівництво, частина – для ведення особистого сільського
+                            господарства). <strong>Експертна оцінка землі</strong> у такому випадку проводиться окремо по кожній з частин
+                            ділянки та оформлюється окремими звітами, відповідно вартість такої роботи є вищою.
+                        </p>
+
+                        <h4 class="section-title">
+                            Інформаційною базою для оцінки земельних ділянок є:
+                        </h4>
+
+                        <ul>
+                            <li>відомості державного земельного кадастру (місце розташування, кількісна і якісна
+                                характеристики земельної ділянки, її правовий режим, функціональне використання, дані економічної та грошової оцінки);</li>
+                            <li>проект відведення земельної ділянки;</li>
+                            <li>відомості про природні, економічні, історико-культурні, екологічні та містобудівні особливості розташування земельної ділянки;</li>
+                            <li>містобудівна документація та місцеві правила забудови;</li>
+                            <li>дані про інженерне облаштування земельної ділянки та про об'єкти нерухомого майна, що на ній розташовані;</li>
+                            <li>дані про ціни продажу (оренди) подібних земельних ділянок, що склалися на ринку на момент оцінки;</li>
+                            <li>дані статистичної звітності.</li>
+                        </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
+</section>
 
 
 <!-- MailChimp Signup Form -->
@@ -205,6 +163,30 @@
         </div>
     </div>
 </section>
+
+<!-- sponsors -->
+<div id="sponsor">
+    <div class="container-fluid">
+        <div class="row sponsor text-center">
+            <div class="col-md-2 gray col-md-offset-1">
+                <a href="#"><img src="assets/logos/south.png" alt=""></a>
+            </div>
+            <div class="col-md-2 gray">
+                <a href="#"><img src="assets/logos/vega.png" alt=""></a>
+            </div>
+            <div class="col-md-2 gray">
+                <a href="#"><img src="assets/images/logo3.png" alt=""></a>
+            </div>
+            <div class="col-md-2 gray">
+                <a href="#"><img src="assets/images/logo1.png" alt=""></a>
+            </div>
+            <div class="col-md-2 gray">
+                <a href="#"><img src="assets/images/logo5.png" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!-- About Section -->
 <section id="about" class="container-fluid">
@@ -314,7 +296,6 @@
 </section>
 
 <footer id="contact2" class="container-fluid text-center">
-    <div class="overlay"></div>
     <div class="col-lg-6 col-lg-offset-3">
         <div class="valign-text">Геоземексперт. Всi права захищенi &copy; <a href="#">Geozemexpert.com.ua</a> 2015</div>
     </div>
